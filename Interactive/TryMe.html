@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tryme</title>
+	<style type="text/css">
+	body{ margin:0; background:skyblue; }
+	.header {height: 50px;}
+	.menu {height: 50px; background: gold;}
+	.content{height: 450px;background:#fff;}
+	
+	#browser {width:55%; height:450px; float:right; border:1px solid skyblue;}	
+	#editor {width: 40%;height:450px;float:left; border:1px solid skyblue;}
+	.menu input [type="button"] {margin:10px 0 0 200px; width:120px; height: 50px;}
+	</style>
+	<script type="text/javascript">
+	function myTRY()
+	{
+		var code = document.getElementById("editor").value;
+		document.getElementById("browser").innerHTML = code;
+	}
+</script>
+</head>
+<body>
+<div class="main">
+	<div class="header"></div>
+		<div class="menu"> 
+		<input type="button" value="RUN" onclick="myTRY()"/>
+
+		<div class="content"> 
+<div id="browser"></div><div>
+	<textarea id="editor"></textarea>
+		
+</body>
+</html>
