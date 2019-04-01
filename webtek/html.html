@@ -1,25 +1,520 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WebTechologies</title>
+<title>HTML</title>
 </head>
 <body>
+<ul>
+  <li><a class="active" href="html.html">HTML</a></li>
+  <li><a href="css.html">CSS</a></li>
+  <li><a href="javascript.html">Javascript</a></li>
+</ul>
+<center><h2>HTML Tags</h2></center>
 
-<h3>HTML Tags</h3>
-<p>These tags are the most widely used tags for making divisions and sections for html content mixed with css properties, these tags can make different designs and structures to a website.
-</p>
-<h4>div </h4>
-<p>div tag is a division and used to group HTML elements</p>
-<h4>section</h4>
-<p>section tag is defines a section in a document such as headers, footers, chapters and other section in the document
-</p>
-<h4>nav</h4>
-<p>nav tags is used to define as the set of navigation links either within the documents or to the other </p>
-<h4>span</h4>
-<p>span is used to color a part of a text
-</p>
-<h4>list</h4>
-<p>list tags are used to present list of informations in a more formal way
-</p>
+<table id="main">
+	<h2>Main root</h2>
+
+  <tr>
+    <th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>html</td><a href="tags/htmltags.html"></a>
+    <td>Represents the root of an HTML document. All the other elements must be the descendants of this element.
+
+    </td>
+  </tr>
+</table>
+
+  <h2>Document metadata</h2>
+  <tr>
+<table id="metadata">
+    <th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>head</td>
+    <td>Defines the documents header block</td>
+	</tr>
+	<tr>
+    <td>title</td>
+    <td>It specifies the documents title</td>
+    </tr>
+    <tr>
+    <td>base</td>
+    <td>Sets base URI to solve relative URIs</td>
+    </tr>
+    <tr>
+    <td>link</td>
+    <td>Gives relational information for documents</td>
+    </tr>
+    <tr>
+    <td>meta</td>
+    <td>Provides information for the document</td>
+    </tr>
+    <tr>
+    <td>style</td>
+    <td>Contains presentational attributes</td>
+  </tr>
+</table>
+ <h2>Sections</h2>
+  <tr>
+<table id="sections">
+    <th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>body</td>
+    <td>Contains all the renderable elements</td>
+	</tr>
+	<tr>
+    <td>article</td>
+    <td>Contains distributable content</td>
+	</tr>
+	<tr>
+    <td>section</td>
+    <td>Defines a section of the document</td>
+	</tr>
+	<tr>
+    <td>nav</td>
+    <td>Defines a navigation section</td>
+	</tr>
+	<tr>
+    <td>aside</td>
+    <td>Holds the content only slightly related</td>
+	</tr>
+	<tr>
+    <td>h1, h2, h3, h4, h5, h6</td>
+    <td> tags represent six levels of section headings, h1 is is the highest section level and h6 is the lowest</td>
+	</tr>
+	<tr>
+    <td>hgroup</td>
+    <td> Groups consecutive headings</td>
+	</tr>
+	<tr>
+    <td>header</td>
+    <td> Contains the header of a section</td>
+	</tr>
+	<tr>
+    <td>footer</td>
+    <td> Contains the footer of a section</td>
+	</tr>
+	<tr>
+    <td>address</td>
+    <td> Provides conact information</td>
+	</tr>		
+</table>
+<h2>Grouping Content</h2>
+  <tr>
+<table id="grouping">
+	<th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>p</td>
+    <td>Inserts a paragraph</td>
+	</tr>
+	<tr>
+    <td>hr</td>
+    <td>Draws a horizontal line or rule</td>
+	</tr>
+	<tr>
+    <td>pre</td>
+    <td>Defines a block of preformatted text</td>
+	</tr>
+	<tr>
+    <td>blockquote</td>
+    <td>Block level quotation</td>
+	</tr>
+	<tr>
+    <td>ol</td>
+    <td>Inserts an ordered list</td>
+	</tr>
+	<tr>
+    <td>ul</td>
+    <td>Inserts an unordered list</td>
+	</tr>
+	<tr>
+    <td>menu</td>
+    <td>Inserts a toolbar menu</td>
+	</tr>
+	<tr>
+    <td>li</td>
+    <td>Defines a list item</td>
+    </tr>
+    <tr>
+    <td>dl</td>
+    <td>Inserts a definations list</td>
+	</tr>
+	<tr>
+    <td>dt</td>
+    <td>Inserts a term in a list</td>
+	</tr>
+	<tr>
+    <td>dd</td>
+    <td>Provides  descriptionns in a list</td>
+	</tr>
+	<tr>
+    <td>figure</td>
+    <td>Marks its content as a reference</td>
+	</tr>
+	<tr>
+    <td>figcaption</td>
+    <td>Provides a caption for a figure</td>
+	</tr>
+	<tr>
+    <td>main</td>
+    <td>Acts as a main container for elements</td>
+	</tr>
+	<tr>
+    <td>div</td>
+    <td>Defines a block of content</td>
+	</tr>
+</table>
+<h2>Text Level Semantics</h2>
+  <tr>
+<table id="text">
+	<th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>a</td>
+    <td>Inserts links or bookmarks</td>
+	</tr>
+	<tr>
+    <td>em</td>
+    <td>Indicates emphasis</td>
+	</tr>
+	<tr>
+    <td>strong</td>
+    <td>Indicates strong emphasis</td>
+	</tr>
+	<tr>
+    <td>small</td>
+    <td>Renders text in "small" font</td>
+	</tr>
+	<tr>
+    <td>s</td>
+    <td>Content no longer accurate or relevant</td>
+	</tr>
+	<tr>
+    <td>cite</td>
+    <td>Inserts a citation or reference</td>
+	</tr>
+	<tr>
+    <td>q</td>
+    <td>Inserts an inline quotation</td>
+	</tr>
+	<tr>
+    <td>dfn</td>
+    <td>Provides a defination for a term</td>
+	</tr>
+	<tr>
+    <td>abbr</td>
+    <td>Explains abbreviations</td>
+	</tr>
+	<tr>
+    <td>ruby</td>
+    <td>Insert ruby annotated text</td>
+	</tr>
+	<tr>
+    <td>rt</td>
+    <td>Provides a ruby annotation</td>
+	</tr>
+	<tr>
+    <td>rp</td>
+    <td>Makes text to be ignored in ruby</td>
+	</tr>
+	<tr>
+    <td>data</td>
+    <td>Provides a machine-readable version</td>
+	</tr>
+	<tr>
+    <td>time</td>
+    <td>Represents a date and or time</td>
+	</tr>
+	<tr>
+    <td>code</td>
+    <td>Represents computer code</td>
+	</tr>
+	<tr>
+    <td>var</td>
+    <td>Indicates an instance of a variable</td>
+	</tr>
+	<tr>
+    <td>samp</td>
+    <td>Contains a program's sample output</td>
+	</tr>
+	<tr>
+    <td>kbd</td>
+    <td>Represents text entered by users</td>
+	</tr>
+	<tr>
+    <td>sub</td>
+    <td>Defines subscript text</td>
+	</tr>
+	<tr>
+    <td>sup</td>
+    <td>Defines superscript text</td>
+	</tr>
+	<tr>
+    <td>i</td>
+    <td>Renders italic text</td>
+	</tr>
+	<tr>
+    <td>b</td>
+    <td>Text in bold style</td>
+	</tr>
+	<tr>
+    <td>u</td>
+    <td>Represents non-textual annotations</td>
+	</tr>
+	<tr>
+    <td>mark</td>
+    <td>Marks text in another document</td>
+	</tr>
+	<tr>
+    <td>bdi</td>
+    <td>Isolates for bidirectional formatting</td>
+	</tr>
+	<tr>
+    <td>bdo</td>
+    <td>Overrides the bidirectional algorithm</td>
+	</tr>
+	<tr>
+    <td>span</td>
+    <td>Assings attributes to text (inline)</td>
+	</tr>
+	<tr>
+    <td>br</td>
+    <td>Forces a line break</td>
+	</tr>
+	<tr>
+    <td>wbr</td>
+    <td>Represents a line break oppurtunity</td>
+	</tr>
+	</table>
+	<h2>Edits</h2>
+  <tr>
+	<table id="edits">
+	<th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>ins</td>
+    <td>Indicates inserted text</td>
+	</tr>
+	<tr>
+    <td>del</td>
+    <td>Indicates deleted text</td>
+	</tr>
+</table>
+<h2>Embedded Content</h2>
+  <tr>
+<table id="embedded">
+	<th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>picture</td>
+    <td>Inserts a multi-source image</td>
+	</tr>
+	<tr>
+    <td>source</td>
+    <td>Specifies alternative media resources</td>
+	</tr>
+	<tr>
+    <td>img</td>
+    <td>Inserts an image</td>
+	</tr>
+	<tr>
+    <td>iframe</td>
+    <td>Inserts a frame inside a document</td>
+	</tr>
+	<tr>
+    <td>embed</td>
+    <td>Integrates external applications</td>
+	</tr>
+	<tr>
+    <td>object</td>
+    <td>Runs external applications</td>
+	</tr>
+	<tr>
+    <td>param</td>
+    <td>Sets a parameter for an object</td>
+	</tr>
+	<tr>
+    <td>video</td>
+    <td>Inserts a videos in the document</td>
+	</tr>
+	<tr>
+    <td>audio</td>
+    <td>Inserts audio files in the document</td>
+	</tr>
+	<tr>
+    <td>track</td>
+    <td>Provides text tracks for a video</td>
+	</tr>
+	<tr>
+    <td>map</td>
+    <td>Defines a client-side image map</td>
+	</tr>
+	<tr>
+    <td>area</td>
+    <td>Defines sectors for image maps</td>
+	</tr>
+</table>
+<h2>Tabular Data</h2>
+  <tr>
+	<table id="tabular">
+	<th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>table</td>
+    <td>Inserts a table</td>
+	</tr>
+	<tr>
+    <td>caption</td>
+    <td>Provides a caption for a table</td>
+	</tr>
+	<tr>
+    <td>colgroup</td>
+    <td>Groups columns in atable</td>
+	</tr>
+	<tr>
+    <td>col</td>
+    <td>Sets attributes for a table's columns</td>
+	</tr>
+	<tr>
+    <td>tbody</td>
+    <td>Defines the body of a table</td>
+	</tr>
+	<tr>
+    <td>thead</td>
+    <td>Defines the header of a table/td>
+	</tr>
+	<tr>
+    <td>tfoot</td>
+    <td>Defines the footer of a table</td>
+	</tr>
+	<tr>
+    <td>tr</td>
+    <td>Inserts a row in a table</td>
+	</tr>
+	<tr>
+    <td>tr</td>
+    <td>Inserts a row in a table</td>
+	</tr>
+	<tr>
+    <td>td</td>
+    <td>Inserts a regular cell in a table</td>
+	</tr>
+	<tr>
+    <td>th</td>
+    <td>Inserts a header cell in a table</td>
+	</tr>
+	
+</table>
+<h2>Forms</h2>
+  <tr>
+<table id="forms">
+	<th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>form</td>
+    <td>Inserts a form</td>
+	</tr>
+	<tr>
+    <td>label</td>
+    <td>Sets a label for a control</td>
+	</tr>
+	<tr>
+    <td>input</td>
+    <td>Displays an input control</td>
+	</tr>
+	<tr>
+    <td>button</td>
+    <td>Creats a button control</td>
+	</tr>
+	<tr>
+    <td>select</td>
+    <td>Creates a select control</td>
+	</tr>
+	<tr>
+    <td>datalist</td>
+    <td>Provides suggestions for input fields</td>
+	</tr>
+	<tr>
+    <td>optgroup</td>
+    <td>Groups options in a select control</td>
+	</tr>
+	<tr>
+    <td>option</td>
+    <td>Inserts an option in a select control</td>
+	</tr>
+	<tr>
+    <td>textarea</td>
+    <td>Creates a multiline text input</td>
+	</tr>
+	<tr>
+    <td>output</td>
+    <td>Shows the output of a process</td>
+	</tr>
+	<tr>
+    <td>progress</td>
+    <td>Shows a task's completion progress</td>
+	</tr>
+	<tr>
+    <td>meter</td>
+    <td>Represents a measurement</td>
+	</tr>
+	<tr>
+    <td>fieldset</td>
+    <td>Groups control in a form</td>
+	</tr>
+	<tr>
+    <td>legend</td>
+    <td>Assigns a caption for a fieldset</td>
+	</tr>
+</table>
+<h2>Interactive Elements</h2>
+  <tr>
+	<table id="interactive">
+	<th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>details</td>
+    <td>Provides collapsable information</td>
+	</tr>
+	<tr>
+    <td>summary</td>
+    <td>Provides a summary for a details element</td>
+	</tr>
+	<tr>
+    <td>dialog</td>
+    <td>Inserts a dialog box</td>
+	</tr>
+	
+</table>
+<h2>Scripting</h2>
+  <tr>
+<table id="scripting">
+	<th>Elements</th>
+    <th>Description</th>
+    <tr>
+    <td>script</td>
+    <td>Contains scripts</td>
+	</tr>
+	<tr>
+    <td>noscript</td>
+    <td>Provides alternative content for scripts</td>
+	</tr>
+	<tr>
+    <td>template</td>
+    <td>Defines a template for data to come</td>
+	</tr>
+	<tr>
+    <td>slot</td>
+    <td>Placeholder for data in components</td>
+	</tr>
+	<tr>
+    <td>canvas</td>
+    <td>Renders dynamic bitmap graphics</td>
+	</tr>
+	
+</table>
 </body>
 </html>
