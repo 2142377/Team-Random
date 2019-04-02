@@ -1,34 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>tryme</title>
-	<style type="text/css">
-	body{ margin:0; background:#AAF2FF; }
-	.header {height: 50px;}
-	.menu {height: 50px; background: #cccccc;}
-	.content{height: 450px;background:#fff;}
-	
-	#browser {width:55%; height:400px; float:right; border:1px solid #b2b2b2;}	
-	#editor {width: 40%;height:400px;float:left; border:1px solid #b2b2b2;}
-	.menu input [type="button"] {margin:10px 0 0 200px; width:120px; height: 50px;}
-	</style>
-	<script type="text/javascript">
-	function myTRY()
-	{
-		var code = document.getElementById("editor").value;
-		document.getElementById("browser").innerHTML = code;
-	}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Interavtive Learning Resource</title>
+      <style type="text/css">
+  body{ margin:0; background:#AAF2FF; }
+  .header {height: 50px;}
+  .menu {height: 50px; background: #cccccc;}
+  .content{height: 450px;background:#fff;}
+  
+  #browser {width:55%; height:400px; float:right; border:1px solid #b2b2b2;}  
+  #editor {width: 40%;height:400px;float:left; border:1px solid #b2b2b2;}
+  .menu input [type="button"] {margin:10px 0 0 200px; width:120px; height: 50px;}
+  </style>
+  <script type="text/javascript">
+  function myTRY()
+  {
+    var code = document.getElementById("editor").value;
+    document.getElementById("browser").innerHTML = code;
+  }
 </script>
 </head>
 <body>
-<div class="main">
-	<div class="header"></div>
-		<div class="menu"> 
-		<input type="button" value="RUN" onclick="myTRY()"/>
+    <header>
+        <nav class="smallcaps" id="navigation">
+            <ul id="navList" >
+                 <a class="navbar-brand" href="index.html">
+              <img src="img/webtek.png" alt="logo">
+            </a>                    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="TryMe.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
 
-		<div class="content"> 
+   
+
+<main>
+<div class="main">
+  <div class="header"></div>
+    <div class="menu"> 
+    <input type="button" value="RUN" onclick="myTRY()"/>
+
+    <div class="content"> 
 <div id="browser"></div><div>
-	<textarea id="editor"></textarea>
-		
+  <textarea id="editor"></textarea>
+
+    
+    
+</main>
+
+<footer class="smallcaps">
+    <ul class="center">
+        <li>copyright &copy; 2019</li>
+        <li>9405A it 324</li>
+        <li>3:00 - 4:00 tf</li>
+    </ul>
+</footer>
+
 </body>
 </html>
