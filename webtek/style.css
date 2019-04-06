@@ -1,60 +1,14 @@
-<style>
+.groove {border-style: groove;}
 
-
-h1 {
-  color: white;
-  text-align: center;
+.htmlbackground {
+ background-image: url("white");
+ background-color: #cccccc;
 }
-
-img {
-  display: block;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 20%;
-  padding: 50px;
+.indexbackground {
+ background-image: url();
+ background-color: #cccccc;
+ 
 }
-
-.button1 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button1 {width: 100%;}
-
-.button2 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button2 {width: 100%;}
-
-.button3 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button3 {width: 100%;}
 
 #main {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -303,8 +257,8 @@ img {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 1;
+  padding: 10;
   overflow: hidden;
   background-color: #333;
 }
@@ -316,8 +270,8 @@ li {
 li a {
   display: block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+  text-align: left;
+  padding: 19px 17px;
   text-decoration: none;
 }
 
@@ -325,5 +279,26 @@ li a:hover {
   background-color: #111;
 }
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
-</style>
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
