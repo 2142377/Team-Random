@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>audio element</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>< audio> element</h1>
+    <p>The < audio> elements allows us to embed audio resource into a web page.
+    <p>There are two ways to load a audio resource:
+    <ol>
+        <li><p>Using the src attribute which is the direct method.</p></li>
+        <li><p>Using the < source> element which leans more on compatibility among browsers.</p></li>
+    </ol>
+    </p>
+    <h2>Example:</h2>
+    <p>
+        In the first example we will be using the src attribute to insert a audio. We'll provide a fallback content so that <br>
+        users with browsers that is incompatible with the < audio> element will be informed about the problem and<br>
+        have information on how to proceed. We also specified the size of the audio using the width and height attribute.
+    </p>
+    <p>
+        < audio src="audio/sample.mp3" width="384" height="288" controls><br>
+            < p><br>
+                Your browser doesn't support audio playback natively or doesn't have the<br>
+                required Ogg codecs. You may want to upgrade to a modern browser with more<br>
+                features, in order to view the audio file.<br>
+            < /p><br>
+        < /audio>
+    </p>
+
+    <h3>Output:</h3>
+    <audio src="audio/sample.mp3" width="384" height="288" controls>
+            <p>
+                Your browser doesn't support audio playback natively or doesn't have the
+                required Ogg codecs. You may want to upgrade to a modern browser with more
+                features, in order to view the audio file.
+            </p>
+        </audio>
+    <p>The second example is using the < source> element. Using the < source> element will have more compatibility with all types of browsers</p>
+    <p>
+        < audio width="384" height="288" controls><br><pre>
+            < source src="audio/sample.mp3" type="audio/mp4"><br>
+            < source src="audio/sample.webm" type="audio/webm"><br>
+            < source src="audio/sample.ogg" type="audio/ogg"><br></pre>
+        < /audio>
+    </p>
+    <h3>Output:</h3>
+    <audio width="384" height="288" controls>
+        <source src="audio/sample.mp3" type="audio/mp4">
+        <source src="audio/sample.webm" type="audio/webm">
+        <source src="audio/sample.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html>

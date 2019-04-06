@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>video element</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>< video> element</h1>
+    <p>The < video> elements allows us to embed video resource into a web page.
+    <p>There are two ways to load a video resource:
+    <ol>
+        <li><p>Using the src attribute which is the direct method.</p></li>
+        <li><p>Using the < source> element which leans more on compatibility among browsers.</p></li>
+    </ol>
+    </p>
+    <h2>Example:</h2>
+    <p>
+        In the first example we will be using the src attribute to insert a video. We'll provide a fallback content so that <br>
+        users with browsers that is incompatible with the < video> element will be informed about the problem and<br>
+        have information on how to proceed. We also specified the size of the video using the width and height attribute.
+    </p>
+    <p>
+        < video src="video/Twitch.mp4" width="384" height="288" controls><br>
+            < p><br>
+                Your browser doesn't support video playback natively or doesn't have the<br>
+                required Ogg codecs. You may want to upgrade to a modern browser with more<br>
+                features, in order to view the video file.<br>
+            < /p><br>
+        < /video>
+    </p>
+
+    <h3>Output:</h3>
+    <video src="video/Twitch.mp4" width="384" height="288" controls>
+            <p>
+                Your browser doesn't support video playback natively or doesn't have the
+                required Ogg codecs. You may want to upgrade to a modern browser with more
+                features, in order to view the video file.
+            </p>
+        </video>
+    <p>The second example is using the < source> element. Using the < source> element will have more compatibility with all types of browsers</p>
+    <p>
+        < video width="384" height="288" controls><br><pre>
+            < source src="video/Twitch.mp4" type="video/mp4"><br>
+            < source src="video/Twitch.webm" type="video/webm"><br>
+            < source src="video/Twitch.ogg" type="video/ogg"><br></pre>
+        < /video>
+    </p>
+    <h3>Output:</h3>
+    <video width="384" height="288" controls>
+        <source src="video/Twitch.mp4" type="video/mp4">
+        <source src="video/Twitch.webm" type="video/webm">
+        <source src="video/Twitch.ogg" type="video/ogg">
+    </video>
+</body>
+</html>
