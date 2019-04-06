@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
         $(document).ready(function(){
-          $("button").click(function(){
-            $("div").css("height", function(i){
+          $(ocument.getElementById("div_button")).click(function(){
+            $ (document.getElementById("adjustable")).css("height", function(i){
               var x = document.getElementById("div_height").value;
               return i + x;
             });
-            $("div").css("width", function(o){
+            $ (document.getElementById("adjustable")).css("width", function(o){
               var y = document.getElementById("div_width").value;
               return o + y;
             });
           });
         });
-      </script>
+        </script>
       <title>Interavtive Learning Resource</title>
     </head>
     <body>
@@ -39,35 +39,18 @@
 
 
             <main>
-              <h3>CSS </h3>
-              <h4>Height and Width Properties</h4>
-              <p>
-                  used to set the height and width of elements means the browser calculates the height and width.
-                Setting max-width is to set the maximum width of an element the specified in length values  this common units like:
-              </p>
-                <ul>
-                  <li>Px- pixels</li>
-                  <li>rem</li>
-                  <li>%</li>
-                  <li>em</li>
-                </ul>
 
               <h4>Layout and positioning properties</h4>
               <p >
-                  These properties are used to specify positions for elements commonly used for divs,sections and images and more.
+                  These properties are used to specify positions and sizes for elements. Commonly used for divs,sections and images and more.
               </p>
-                  <ul>
-                    <li>Px- pixels</li>
-                    <li>rem</li>
-                    <li>%</li>
-                    <li>em</li>
-                  </ul>
+
               <input type="text" id="div_height" name="value_here" value="div height">
               <input type="text" id="div_width" name="value_herex" value="div width">
-              <button type="button" name="enter">Enter div size</button>
+              <button id="div_button" name="enter" id="size_button">Enter div size</button>
 
-              <div class="movable" style="position: relative; width: 400px;height: 200px; border: 3px solid #73AD21;">
-                <p>a div</p>
+              <div class="movable" id="adjustable" style="position: relative; width: 400px;height: 200px; border: 3px solid #73AD21;">
+                <p style="position: center;">a div</p>
               </div>
 
            </main>
