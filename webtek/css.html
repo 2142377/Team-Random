@@ -6,7 +6,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
         $(document).ready(function(){
-          $(ocument.getElementById("div_button")).click(function(){
+          $(ocument.getElementById("adjust_div_button")).click(function(){
             $ (document.getElementById("adjustable")).css("height", function(i){
               var x = document.getElementById("div_height").value;
               return i + x;
@@ -18,6 +18,20 @@
           });
         });
         </script>
+        <script>
+          $(document).ready(function(){
+            $(ocument.getElementById("move_div_button")).click(function(){
+              $ (document.getElementById("adjustable")).css("height", function(i){
+                var x = document.getElementById("div_height").value;
+                return i + x;
+              });
+              $ (document.getElementById("adjustable")).css("width", function(o){
+                var y = document.getElementById("div_width").value;
+                return o + y;
+              });
+            });
+          });
+          </script>
       <title>Interavtive Learning Resource</title>
     </head>
     <body>
@@ -44,14 +58,31 @@
               <p >
                   These properties are used to specify positions and sizes for elements. Commonly used for divs,sections and images and more.
               </p>
+              <div class="adjustable_container" id="first_container">
+                <input type="text" id="div_height" name="value_here" value="div height">
+                <input type="text" id="div_width" name="value_herex" value="div width">
+                <button id="adjust_div_button" name="enter" id="size_button">Enter div size</button>
 
-              <input type="text" id="div_height" name="value_here" value="div height">
-              <input type="text" id="div_width" name="value_herex" value="div width">
-              <button id="div_button" name="enter" id="size_button">Enter div size</button>
-
-              <div class="movable" id="adjustable" style="position: relative; width: 400px;height: 200px; border: 3px solid #73AD21;">
-                <p style="position: center;">a div</p>
+                <div class="adjust" id="adjustable" style="position: relative; width: 400px;height: 200px; border: 3px solid #73AD21;">
+                  <p style="position: center;">An adjustable div</p>
+                </div>
               </div>
+
+              <div class="movable_container" id="second_container">
+                <input type="text" id="div_top" name="value_here" value="top">
+                <button id="move_div_button1" name="enter" id="position_button">Enter div top position</button>
+                <input type="text" id="div_bottom" name="value_here" value="bottom">
+                <button id="move_div_button2" name="enter" id="position_button">Enter div bottom position</button>
+                <input type="text" id="div_right" name="value_here" value="right">
+                <button id="move_div_button3" name="enter" id="position_button">Enter div right position</button>
+                <input type="text" id="div_left" name="value_here" value="left">
+                <button id="move_div_button4" name="enter" id="position_button">Enter div left position</button>
+
+                <div class="movable" id="adjustable" style="border: 3px solid #73AD21;">
+                  <p style="position: center;">A movable div</p>
+                </div>
+              </div>
+
 
            </main>
 
