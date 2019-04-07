@@ -255,6 +255,16 @@
   color: white;
 }
 
+#title{
+  color: white;
+}
+.list-group {
+  color: white;
+}
+.results{
+  color:blue;
+}
+
 
 ul {
   list-style-type: none;
