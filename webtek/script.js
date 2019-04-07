@@ -43,3 +43,7 @@ $(document).ready(function(){
     });
   });
 });
+function reset(){
+  document.getElementById('adjustable').style.height = "200px";
+  document.getElementById('adjustable').style.width = "500px";
+}

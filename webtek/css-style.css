@@ -27,15 +27,19 @@
 }
 .example{
   position: relative;
-  border: 5px solid #0080ff;
-  border-radius: 100px;
+  border: 5px solid #fff;
+  border-radius: 30px;
   height: 200px;
   width: 500px;
   margin: auto;
 }
 
 html{
-  background-color: pink;
+  background: -webkit-linear-gradient(110deg, #4166f5 60%, #cccccc 60%);
+  background: -o-linear-gradient(110deg, #4166f5 60%, #cccccc 60%);
+  background: -moz-linear-gradient(110deg, #4166f5 60%, #cccccc 60%);
+  background: linear-gradient(110deg, #4166f5 60%, #cccccc 60%);
+}
 }
 
 .tooltip {
