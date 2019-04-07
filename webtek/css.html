@@ -2,20 +2,20 @@
 <html lang="en">
   <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css-style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
       <script type="text/javascript" src="script.js"></script>
 
-      <title>Interavtive Learning Resource</title>
+      <title>Interavtive Learning Resource - css</title>
     </head>
     <body>
       <header>
           <nav class="smallcaps" id="navigation">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/webtek.png" alt="logo" width="200px" height="50 px" align="left" background-color= #333>
+            </a>
               <ul id="navList" >
-                  <a class="navbar-brand" href="index.html">
-                    <img src="img/webtek.png" alt="logo">
-                  </a>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="html.html">HTML</a></li>
                   <li><a href="css.html">CSS</a></li>
@@ -30,20 +30,22 @@
             <main>
 
               <h4>Layout and positioning properties</h4>
-              <p >
-                  These properties are used to specify positions and sizes for elements. Commonly used for divs,sections and images and more.
-              </p>
               <div class="adjustable_container" id="first_container">
+                <p>These properties are used to specify positions and sizes for elements. Commonly used for divs,sections and images and more.</p>
+                <p>Enter a value to change the height and width of the elements. Ex  100px, 200px 2em, 5rem </p>
+                <p>Height:</p>
                 <input type="text" id="div_height" name="value_here" value="div height">
+                <p>Width:</p>
                 <input type="text" id="div_width" name="value_herex" value="div width">
                 <button id="adjust_div_button" name="enter" id="size_button">Enter div size</button>
 
-                <div class="adjust" id="adjustable" style="position: relative ; border: 3px solid #73AD21;">
+                <div class="adjust" id="adjustable" style="position: relative ; border: 5px solid #0080ff;">
                   <p style="position: center;">An adjustable div</p>
                 </div>
               </div>
 
               <div class="movable_container" id="second_container">
+                <p>Enter a value in px to adjust the div below. Ex 100px, 200px 2em, 5rem </p>
                 <input type="text" id="div_top" name="value_here" value="top">
                 <button id="move_div_button1" name="enter" >Enter div top position</button>
 
@@ -56,7 +58,7 @@
                 <input type="text" id="div_left" name="value_here" value="left">
                 <button id="move_div_button4" name="enter">Enter div left position</button>
 
-                <div class="movable1" id="movable" style="position: relative; border: 3px solid #73AD21;">
+                <div class="movable1" id="movable" style="position: relative; border: 5px solid #0080ff;">
                   <p style="position: center;">A movable div</p>
                 </div>
               </div>
