@@ -21,3 +21,43 @@
 #navigation li a:hover {
   background-color: #111;
 }
+
+.indiv{
+  text-align: center;
+}
+.example{
+  position: relative;
+  border: 5px solid #0080ff;
+  border-radius: 100px;
+  height: 200px;
+  width: 500px;
+  margin: auto;
+}
+
+html{
+  background-color: pink;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tiptext {
+  visibility: visible;
+}

@@ -29,37 +29,51 @@
 
             <main>
 
-              <h4>Layout and positioning properties</h4>
+              <h2> CSS Layout and positioning properties</h2>
               <div class="adjustable_container" id="first_container">
-                <p>These properties are used to specify positions and sizes for elements. Commonly used for divs,sections and images and more.</p>
+                <h3>Height and Width Properties</h3>
+                <p>These properties are used to specify sizes for elements. Commonly used for divs,sections and images and more.</p>
                 <p>Enter a value to change the height and width of the elements. Ex  100px, 200px 2em, 5rem </p>
+                <div class="tooltip">Code fragment(Hover over me.)
+                  <span class="tiptext">
+                    <img class="manImg" src="img/frag1.png"></img>
+                  </span>
+                </div>
                 <p>Height:</p>
                 <input type="text" id="div_height" name="value_here" value="div height">
                 <p>Width:</p>
                 <input type="text" id="div_width" name="value_herex" value="div width">
                 <button id="adjust_div_button" name="enter" id="size_button">Enter div size</button>
 
-                <div class="adjust" id="adjustable" style="position: relative ; border: 5px solid #0080ff;">
-                  <p style="position: center;">An adjustable div</p>
+                <div class="example" id="adjustable">
+                  <p class="indiv">An adjustable div</p>
                 </div>
               </div>
 
               <div class="movable_container" id="second_container">
-                <p>Enter a value in px to adjust the div below. Ex 100px, 200px 2em, 5rem </p>
+                <h3>Position and location Properties</h3>
+                <p>These properties are used to specify positions elements. using top, bottom, right or left attributes.</p>
+                <p>Enter a value to adjust the div below. Ex 100px, 200px 2em, 5rem </p>
+                <div class="tooltip">Code fragment(Hover over me.)
+                  <span class="tiptext">
+                    <img class="manImg" src="img/frag2.png"></img>
+                  </span>
+                </div>
+                <p>Top:</p>
                 <input type="text" id="div_top" name="value_here" value="top">
                 <button id="move_div_button1" name="enter" >Enter div top position</button>
-
+                <p>Bottom:</p>
                 <input type="text" id="div_bottom" name="value_here" value="bottom">
                 <button id="move_div_button2" name="enter" >Enter div bottom position</button>
-
+                <p>Right:</p>
                 <input type="text" id="div_right" name="value_here" value="right">
                 <button id="move_div_button3" name="enter" >Enter div right position</button>
-
+                <p>Left:</p>
                 <input type="text" id="div_left" name="value_here" value="left">
                 <button id="move_div_button4" name="enter">Enter div left position</button>
 
-                <div class="movable1" id="movable" style="position: relative; border: 5px solid #0080ff;">
-                  <p style="position: center;">A movable div</p>
+                <div class="example" id="movable">
+                  <p class="indiv" >A movable div</p>
                 </div>
               </div>
 
