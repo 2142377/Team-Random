@@ -62,12 +62,21 @@ html{
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
 }
 
 .tooltip:hover .tiptext {
   visibility: visible;
+}
+h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+.movable_container,.adjustable_container{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 2rem;
 }
