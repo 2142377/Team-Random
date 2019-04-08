@@ -1,0 +1,67 @@
+#navList{
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ #navigation li {
+  float: left;
+}
+
+ li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navigation li a:hover {
+  background-color: #111;
+}
+
+.indiv{
+  text-align: center;
+}
+.example{
+  position: relative;
+  border: 5px solid #fff;
+  border-radius: 30px;
+  height: 200px;
+  width: 500px;
+  margin: auto;
+}
+
+html{
+  background: -webkit-linear-gradient(110deg, #4166f5 60%, #cccccc 60%);
+  background: -o-linear-gradient(110deg, #4166f5 60%, #cccccc 60%);
+  background: -moz-linear-gradient(110deg, #4166f5 60%, #cccccc 60%);
+  background: linear-gradient(110deg, #4166f5 60%, #cccccc 60%);
+}
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tiptext {
+  visibility: visible;
+}
